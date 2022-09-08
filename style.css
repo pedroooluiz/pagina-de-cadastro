@@ -1,0 +1,78 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body{
+    background-color: darkslategrey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario{
+    padding: 40px;
+    width: 50%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 40px auto 40px auto;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid rgb(4, 163, 142);
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+input{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(4, 163, 142);
+    background: none;
+    color: white;
+}
+
+input::placeholder{
+    color: rgb(130, 130, 130);
+}
+
+.butao{
+    margin-bottom: 10px;
+}
+
+.sexo{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 10px;
+    align-self: flex-start;
+    width: 25%;
+}
+legend{
+    margin-bottom: 5px;
+}
+
+.enviar{
+    font-size: 22px;
+    border-radius: 10px;
+    background-color: rgb(42, 124, 165);
+    cursor: pointer;
+    transition: .10s;
+}
+
+.enviar:hover{
+    background-color: rgb(58, 160, 211);
+}
+
+.enviar:active{
+    background: rgb(8, 238, 238);
+}
+
+@media screen and (max-width: 650px) {
+    .formulario{
+        width: auto;
+    }
+}
